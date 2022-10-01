@@ -19,15 +19,19 @@ header{
     justify-content: center;
 }
 .right{
+    display:flex;
+    justify-content: center;
+    align-items: center;;
     height: 50px;
     width: 50px;
     margin: 0px 5px 20px 5px;
-    border-bottom: 5px solid black
+    border-bottom: 5px solid black;
+    font-size: 30px;
 }
 .letter{
     display:flex;
-    justify-content: center;;
-    align-items: center;;
+    justify-content: center;
+    align-items: center;
     height: 100px;
     width: 100px;
     margin: 5px;
