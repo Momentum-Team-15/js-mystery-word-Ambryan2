@@ -12,7 +12,7 @@ let wrong = document.querySelector('#incorrectCont');
 //function that selects the next word in array that will be put as parameter in displayGrid
 let exampleWord = 'lobby'
 exampleWord = exampleWord.toUpperCase();
-console.log(exampleWord)
+// console.log(exampleWord)
 
 //this creates the chosen letter display
 let displayGrid = (array) => {
@@ -52,7 +52,6 @@ let guessGrid = (array) => {
                 strike.classList.add('strike');
 
                 wrong.appendChild(strike);
-                console.log('letter was not found')
             }
 
             //this is going to add .innerText to the div elements that are created in word display function
@@ -66,5 +65,5 @@ let guessGrid = (array) => {
 
 displayGrid(exampleWord);
 // displayLetCont[2].innerText = 'T'
-console.log(displayLetCont)
+// console.log(displayLetCont)
 guessGrid(enAlphabet);
