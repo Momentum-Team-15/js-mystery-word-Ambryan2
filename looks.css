@@ -1,0 +1,35 @@
+header{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.mainContainer{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.wordDisplay{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+.alphabet{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.right{
+    height: 50px;
+    width: 50px;
+    margin: 0px 5px 20px 5px;
+    border-bottom: 5px solid black
+}
+.letter{
+    display:flex;
+    justify-content: center;;
+    align-items: center;;
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    background-color: lightcyan;
+}
