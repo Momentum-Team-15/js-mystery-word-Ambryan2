@@ -1,12 +1,31 @@
 header{
     display: flex;
     justify-content: center;
-    margin: auto;
+    /* margin: auto; */
 }
 .mainContainer{
     display: flex;
     flex-flow: column wrap;
     align-items: center;
+}
+.h1{
+    width: 80%;
+}
+h1{
+    position: relative;
+    left: 55%;
+}
+#incorrectCont{
+    display:flex;
+    flex-flow: row;
+    align-items: center;
+    width: 20%;
+}
+.strike{
+    height:50px;
+    width: 10px;
+    background-color: red;
+    margin:0px 5px;
 }
 .wordDisplay{
     display: flex;
@@ -36,4 +55,13 @@ header{
     width: 100px;
     margin: 5px;
     background-color: lightcyan;
+}
+.selected{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    background-color: grey;
 }

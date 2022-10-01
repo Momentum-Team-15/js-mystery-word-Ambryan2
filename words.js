@@ -6,7 +6,8 @@ let displayLetCont = [];
 
 //references to locations in html
 let alphabet = document.querySelector('#alphabetCont');
-let chosenWord = document.querySelector('#wordDisplay')
+let chosenWord = document.querySelector('#wordDisplay');
+let wrong = document.querySelector('#incorrectCont');
 
 //function that selects the next word in array that will be put as parameter in displayGrid
 let exampleWord = 'lobby'
@@ -35,14 +36,28 @@ let guessGrid = (array) => {
 
         letter.addEventListener('click',(event)=> {
             //if letter clicked matches a letter in array then change inner text of associated div
+            let tracker = 0
             for (i=0;i<exampleWord.length;i++){
                 if(exampleWord[i]===letter.innerText){
                     displayLetCont[i].innerText = letter.innerText
+                    tracker++
                 }
+                else{
+                    letter.classList.remove('letter')
+                    letter.classList.add('selected')
+                }
+            }
+            if (tracker === 0){
+                let strike = document.createElement('div')
+                strike.classList.add('strike');
+
+                wrong.appendChild(strike);
+                console.log('letter was not found')
             }
 
             //this is going to add .innerText to the div elements that are created in word display function
             console.log(letter.innerText + ' was clicked')
+            // console.log('this letter was found ' + tracker + ' times')
         })
 
         alphabet.appendChild(letter);
